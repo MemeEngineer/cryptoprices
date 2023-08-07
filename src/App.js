@@ -1,4 +1,4 @@
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route, Navigate} from "react-router-dom"
 import Main from "./pages/Main"
 import Currencies from "./pages/Currencies";
 import Price from "./pages/Price"
@@ -12,6 +12,7 @@ function App() {
         <Route path= "/" element={<Main/>}/> 
         <Route path="/currencies" element={<Currencies/>}/>
         <Route path='/price/:symbol' element={<Price/>}/>
+        <Route path="*" element={<Navigate to="/" />}/>
 
       </Routes>
     </div>
