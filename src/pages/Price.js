@@ -9,7 +9,7 @@ export default function Price (props) {
     // or you can do const symbol = params.symbol
     const {symbol} = params;
 
-     const url =`http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`
+     const url =`https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`
 
     const getCoin = async() => {
         try{
