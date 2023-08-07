@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 
 export default function Price (props) {
     const [coin, setCoin] = useState(null)
-    const apiKey = '90B44FA0-0456-472B-BF89-94085ACCE847'
+    const apiKey = process.env.REACT_APP_COINAPI_KEY
     const params = useParams();
 
     // or you can do const symbol = params.symbol
